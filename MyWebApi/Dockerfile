@@ -7,7 +7,4 @@ RUN dotnet publish -c Release -o  published
 RUN adduser -D -h /app -s /bin/sh spc
 USER spc
 EXPOSE 8000
-
-
-
 CMD ["dotnet", "published/MyWebApi.dll"]
