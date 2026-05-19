@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine
 LABEL project=learning
 LABEL version=8.0
-EXPOSE 5281
+EXPOSE 8000
 WORKDIR /app
 COPY . /app
-RUN dotnet publish -c Release -o ./published
-CMD ["dotnet", "/published/MyWebApi.dll"]
+RUN dotnet publish -c Release -o  published
+CMD ["dotnet", "published/MyWebApi.dll"]
