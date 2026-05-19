@@ -3,7 +3,6 @@ LABEL project=learning
 LABEL version=8.0
 EXPOSE 8000
 RUN adduser -D -h /app -s /bin/sh spc
-RUN chown -R spc /app
 USER spc
 WORKDIR /app
 COPY . /app
