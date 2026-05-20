@@ -10,5 +10,6 @@ RUN adduser -D -h /app -s /bin/sh spc
 USER spc
 WORKDIR /app
 COPY  --from=Builder --chown=spc:spc  /app/published /app
-EXPOSE 8000
+ENV ASPNETCORE_URLS=http://+:8080
+EXPOSE 8080
 CMD ["dotnet", "MyWebApi.dll"]
