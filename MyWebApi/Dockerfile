@@ -1,10 +1,14 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine
+FROM mcr.microsoft.com/dotnet/sdk:8.0 As Builder
 LABEL project=learning
 LABEL version=8.0
 WORKDIR /app
 COPY . /app
 RUN dotnet publish -c Release -o  published
+
+FROM  mcr.microsoft.com/dotnet/aspnet:8.0-alpine
 RUN adduser -D -h /app -s /bin/sh spc
 USER spc
+WORKDIR /app
+COPY  --from=Builder --chown=spc:spc  /app/published /app
 EXPOSE 8000
-CMD ["dotnet", "published/MyWebApi.dll"]
+CMD ["dotnet", "MyWebApi.dll"]
