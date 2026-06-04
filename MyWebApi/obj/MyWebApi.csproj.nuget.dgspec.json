@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\91798\\DotnetProjects\\MyWebApi\\MyWebApi.csproj": {}
+    "D:\\DotnetProjects\\MyWebApi\\MyWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\91798\\DotnetProjects\\MyWebApi\\MyWebApi.csproj": {
+    "D:\\DotnetProjects\\MyWebApi\\MyWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\91798\\DotnetProjects\\MyWebApi\\MyWebApi.csproj",
+        "projectUniqueName": "D:\\DotnetProjects\\MyWebApi\\MyWebApi.csproj",
         "projectName": "MyWebApi",
-        "projectPath": "C:\\Users\\91798\\DotnetProjects\\MyWebApi\\MyWebApi.csproj",
+        "projectPath": "D:\\DotnetProjects\\MyWebApi\\MyWebApi.csproj",
         "packagesPath": "C:\\Users\\91798\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\91798\\DotnetProjects\\MyWebApi\\obj\\",
+        "outputPath": "D:\\DotnetProjects\\MyWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91798\\AppData\\Roaming\\NuGet\\NuGet.Config"
